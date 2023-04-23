@@ -1,0 +1,20 @@
+{
+  "id": {
+    "_unique": 15121815254225083698576316248035950592
+  },
+  "timestamp": "2023-04-13T20:16:58.826574891Z",
+  "messages": [
+    {
+      "index": 0,
+      "message": {
+        "time": {
+          "secs": 1681417018,
+          "nanos": 826451763
+        },
+        "level": "Information",
+        "topic": "general",
+        "message": "setting vulkan instance app name: Test App Name"
+      }
+    }
+  ]
+}

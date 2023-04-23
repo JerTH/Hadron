@@ -1,0 +1,58 @@
+   0: hadron::debug::dump_backtrace
+             at ./src/debug/mod.rs:45:25
+   1: hadron::debug::tests::test_backtrace_dump
+             at ./src/debug/mod.rs:57:9
+   2: hadron::debug::tests::test_backtrace_dump::{{closure}}
+             at ./src/debug/mod.rs:56:5
+   3: core::ops::function::FnOnce::call_once
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/core/src/ops/function.rs:510:5
+   4: core::ops::function::FnOnce::call_once
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/core/src/ops/function.rs:510:5
+   5: test::__rust_begin_short_backtrace
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/test/src/lib.rs:637:18
+   6: test::run_test::{{closure}}
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/test/src/lib.rs:628:30
+   7: core::ops::function::FnOnce::call_once{{vtable.shim}}
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/core/src/ops/function.rs:510:5
+   8: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/alloc/src/boxed.rs:2000:9
+   9: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/core/src/panic/unwind_safe.rs:271:9
+  10: std::panicking::try::do_call
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/std/src/panicking.rs:483:40
+  11: std::panicking::try
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/std/src/panicking.rs:447:19
+  12: std::panic::catch_unwind
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/std/src/panic.rs:137:14
+  13: test::run_test_in_process
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/test/src/lib.rs:660:27
+  14: test::run_test::run_test_inner::{{closure}}
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/test/src/lib.rs:554:39
+  15: test::run_test::run_test_inner::{{closure}}
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/test/src/lib.rs:581:37
+  16: std::sys_common::backtrace::__rust_begin_short_backtrace
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/std/src/sys_common/backtrace.rs:121:18
+  17: std::thread::Builder::spawn_unchecked_::{{closure}}::{{closure}}
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/std/src/thread/mod.rs:551:17
+  18: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/core/src/panic/unwind_safe.rs:271:9
+  19: std::panicking::try::do_call
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/std/src/panicking.rs:483:40
+  20: std::panicking::try
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/std/src/panicking.rs:447:19
+  21: std::panic::catch_unwind
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/std/src/panic.rs:137:14
+  22: std::thread::Builder::spawn_unchecked_::{{closure}}
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/std/src/thread/mod.rs:550:30
+  23: core::ops::function::FnOnce::call_once{{vtable.shim}}
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/core/src/ops/function.rs:510:5
+  24: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/alloc/src/boxed.rs:2000:9
+  25: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/alloc/src/boxed.rs:2000:9
+  26: std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/c1a859b25a95999ba276075bbd8e284ea675b41a/library/std/src/sys/unix/thread.rs:108:17
+  27: start_thread
+             at ./nptl/./nptl/pthread_create.c:442:8
+  28: clone3
+             at ./misc/../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
